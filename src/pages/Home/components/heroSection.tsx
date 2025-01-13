@@ -1,10 +1,9 @@
 import Button from "@components/Button"
+
 import { FaPlay } from "react-icons/fa6"
 
 const HeroSection = () => {
     
-
-
     return (
         <section className="relative  text-white pb-4  ">
             <div className="container mx-auto w-[85%] bg-white-100 bg-opacity-10  px-6 relative z-10 sm:rounded-[3rem] rounded-[2rem] bg-opacity-10 lg:p-10 md:p-8 p-5 py-8 ">

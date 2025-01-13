@@ -20,7 +20,7 @@ const Navbar = () => {
         setMenuOpen(!menuOpen)
     }
     return (
-        <nav className="flex justify-between  p-4 items-center text-white-100   gap-10 z-30 top-0 fixed left-0 bg-primary-100 w-full sm:px-[2.5rem] backdrop-blur-md">
+        <nav className="flex justify-between  p-4 items-center text-white-100 gap-10 z-30 top-0 sticky left-0 bg-primary-100 w-full sm:px-[2.5rem] backdrop-blur-md">
             <div className="flex items-center gap-20 w-28 sm:w-32 md:w-auto">
                 <img src={ForcytheLogo} alt="Logo" />
                 <ul className=" hidden md:flex  gap-4">
