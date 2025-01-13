@@ -4,10 +4,11 @@ import "react-multi-carousel/lib/styles.css"
 
 interface Props {
     children: ReactNode
-    rewind:boolean
+    //rewind:boolean
+    rtl?: boolean
 }
 
-const CarouselContainer = ({ children, rewind, }: Props) => {
+const CarouselContainer = ({ children, rtl=false}: Props) => {
     return (
         <Carousel
             additionalTransfrom={0}
@@ -16,9 +17,9 @@ const CarouselContainer = ({ children, rewind, }: Props) => {
             //shouldResetAutoplay={false}
             containerClass="container"
             autoPlay
-            autoPlaySpeed={1}
-            customTransition="all 5s linear"
-            transitionDuration={1000}
+            autoPlaySpeed={0}
+            customTransition="transform 10s linear"
+            transitionDuration={10000}
             //arrows={false}
             draggable={false}
             focusOnSelect={false}
@@ -33,29 +34,15 @@ const CarouselContainer = ({ children, rewind, }: Props) => {
                         min: 1024,
                     },
                     items: 4,
-                    //partialVisibilityGutter: 10,
+                partialVisibilityGutter: 40,
                 },
-                // mobile: {
-                //     breakpoint: {
-                //         max: 464,
-                //         min: 0,
-                //     },
-                //     items: 1.2,
-                //     //partialVisibilityGutter: 30,
-                // },
-                // tablet: {
-                //     breakpoint: {
-                //         max: 1024,
-                //         min: 464,
-                //     },
-                //     items: 2,
-                //     //partialVisibilityGutter: 30,
-                // },
+                
             }}
+            arrows={false}
             pauseOnHover={false}
             rewind={false}
-            rewindWithAnimation={rewind}
-            rtl={false}
+            rewindWithAnimation={false}
+            rtl={rtl}
             shouldResetAutoplay={false}
             showDots={false}
             sliderClass=""

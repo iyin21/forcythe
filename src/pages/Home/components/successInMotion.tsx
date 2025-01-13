@@ -29,12 +29,12 @@ const SuccessInMotion = () => {
                     - Our client's journey
                 </p>
             </div>
-            <CarouselContainer rewind={false}>
+            <CarouselContainer >
                 {images.map((item, index)=>(
                     <img src={item} alt="" key={index} />
                 ))}
             </CarouselContainer>
-            <CarouselContainer rewind>
+            <CarouselContainer rtl>
                 {images.map((item, index)=>(
                     <img src={item} alt="" key={index} />
                 ))}
